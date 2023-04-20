@@ -1,10 +1,5 @@
-import "https://deno.land/x/dotenv/load.ts";
-import {
-  createBot,
-  Intents,
-  startBot,
-} from "https://deno.land/x/discordeno@18.0.1/mod.ts";
 import { CommandControl, NewCommand } from "./command.ts";
+import { Intents, createBot, startBot } from "./mod.ts";
 
 const bot = createBot({
   token: Deno.env.get("DISCORD_TOKEN") || "",
